@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 app.use(express.json())
-const PORT = 6000;
+const PORT = process.env.PORT || 6000;
 app.post("/bfhl",(req,res)=>{
     
     const data=req.body.data;
